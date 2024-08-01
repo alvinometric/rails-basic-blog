@@ -1,24 +1,38 @@
-# README
+# rails-basic-blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Most Basic Blog app, made with Ruby on Rails 7.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+```sh
+git clone https://github.com/alvinometric/rails-basic-blog.git
+cd rails-basic-blog
+```
 
-* System dependencies
+### Install dependencies
 
-* Configuration
+```sh
+bundle install
+```
 
-* Database creation
+### Setup DB
 
-* Database initialization
+(SQLite, no additional dependencies required.)
 
-* How to run the test suite
+Run the migration
 
-* Services (job queues, cache servers, search engines, etc.)
+```sh
+rails db:migrate
+```
 
-* Deployment instructions
+Seed the DB
 
-* ...
+```sh
+rails db:seed
+```
+
+### Run the server
+
+```sh
+rails server
+```
